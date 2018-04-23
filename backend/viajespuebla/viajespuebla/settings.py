@@ -25,7 +25,7 @@ SECRET_KEY = 'yx2c@v+wrrcm&gcc@1ndp7bge)7=-y4@*bftvwnl!e*e!*o=zs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','ec2-13-58-243-123.us-east-2.compute.amazonaws.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','ec2-18-217-0-33.us-east-2.compute.amazonaws.com']
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -110,10 +110,10 @@ WSGI_APPLICATION = 'viajespuebla.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'viajespuebla',
-        'USER': 'leonvillapun',
-        'PASSWORD': 'schwarz',
-        'HOST': 'localhost',
+        'NAME': 'viajesPuebla',
+        'USER': 'viajesPuebla',
+        'PASSWORD': 'viajes123',
+        'HOST': 'dbviajes.c72vt9uachn0.us-east-2.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
