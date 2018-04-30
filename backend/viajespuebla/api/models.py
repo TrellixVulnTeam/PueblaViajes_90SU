@@ -6,12 +6,13 @@ from django.dispatch import receiver
 # Create your models here.
 
 class Viaje(models.Model):
-    title = models.CharField(max_length = 30)
+    title = models.CharField(max_length = 100)
     description = models.CharField(max_length = 250)
     start_date = models.DateField()
     end_date = models.DateField()
     price = models.DecimalField(decimal_places = 2, max_digits = 6)
     imageBase64 = models.CharField(max_length=5000, default="empty")
+    contact_number = models.CharField(max_length = 20, default="0")
     suscriptors = models.ManyToManyField(User)
 
     class Meta:

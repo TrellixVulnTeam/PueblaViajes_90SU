@@ -86,7 +86,7 @@ def profile_list(request):
         data = JSONParser().parse(request)
         #Display parameters
         serializer = ProfileSerializer(data=data)
-        
+
         if serializer.is_valid():
             serializer.save()
             return JSONResponse(serializer.data, status=201)
@@ -118,3 +118,22 @@ def profile_detail(request, pk):
     elif request.method == 'DELETE':
         profile.delete()
         return HttpResponse(status=204)
+
+
+@csrf_exempt
+def suscribe_to_trip(request, pk):
+    """
+    Retrieve, update or delete a serie.
+    """
+    try:
+        user = Profile.objects.get(pk=pk)
+    except Profile.DoesNotExist:
+        return HttpResponse(status=404)
+
+    if request.method == 'PUT':
+        data = JSONParser().parse(request)
+        trip = data.trip_id
+        user.trips.add(trip)
+        user.save()
+        return HttpResponse(status=200)
+    return JSONResponse(serializer.errors, status=400)
