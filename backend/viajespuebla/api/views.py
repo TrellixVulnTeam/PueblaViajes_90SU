@@ -131,9 +131,23 @@ def suscribe_to_trip(request, pk):
         return HttpResponse(status=404)
 
     if request.method == 'PUT':
-        data = JSONParser().parse(request)
-        trip = data.trip_id
-        user.trips.add(trip)
+        user.trips.add(request.GET.get('trip_id'))
         user.save()
         return HttpResponse(status=200)
-    return JSONResponse(serializer.errors, status=400)
+    return HttpResponse(status=400)
+
+@csrf_exempt
+def user_trips(request, pk):
+    """
+    Retrieve, update or delete a serie.
+    """
+    try:
+        user = Profile.objects.get(pk=pk)
+        mytrips = user.trips.all()
+    except Profile.DoesNotExist:
+        return HttpResponse(status=404)
+
+    if request.method == 'GET':
+        serializer = ViajeSerializer(mytrips, many=True)
+        return JSONResponse(serializer.data)
+    return HttpResponse(status=400)
