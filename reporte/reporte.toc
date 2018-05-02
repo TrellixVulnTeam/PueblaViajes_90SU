@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{2}
+\contentsline {section}{\numberline {2}Github}{2}
+\contentsline {section}{\numberline {3}Trello}{2}
+\contentsline {section}{\numberline {4}Database}{2}
+\contentsline {section}{\numberline {5}REST API}{3}
+\contentsline {section}{\numberline {6}Frontend Docker}{3}
+\contentsline {section}{\numberline {7}Frontend Testing}{3}
+\contentsline {section}{\numberline {8}Backend Testing}{3}
+\contentsline {section}{\numberline {9}Jenkins}{3}
