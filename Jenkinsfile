@@ -1,18 +1,20 @@
 node {
-  stage('Checkout') {
-    checkout scm
-  }
-  stage ( 'Build') {
-    docker.image('trion/ng-cli').inside {
-      sh 'npm install'
-      sh 'ng build --progress false --prod --aot'
-      sh 'tar -cvzf dist.tar.gz --strip-components=1 dist'
+    def app
+    stage('Build image') {
+        /* This builds the actual image; synonymous to
+         * docker build on the command line */
+
+        app = docker.build("leonvillapun/backendviajes")
     }
-    archive 'dist.tar.gz'
-  }
-  stage('Test') {
-    docker.image('trion/ng-cli-karma').inside {
-      sh 'ng test --progress false --watch false'
+    stage('Test image') {
+        app.inside {
+            sh 'echo "Tests passed"'
+        }
     }
-  }
+    stage('Push image') {
+        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+            app.push("${env.BUILD_NUMBER}")
+            app.push("latest")
+        }
+    }
 }

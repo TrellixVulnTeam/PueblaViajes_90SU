@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.16)  2 MAY 2018 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.16)  3 MAY 2018 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -464,7 +464,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-No file reporte.aux.
+(./reporte.aux)
 \openout1 = `reporte.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -479,6 +479,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
+
 (/usr/local/texlive/2017basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count108
@@ -543,97 +544,88 @@ e
 \c@lstlisting=\count114
  [1
 
-{/usr/local/texlive/2017basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-No file reporte.toc.
+{/usr/local/texlive/2017basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (.
+/reporte.toc)
 \tf@toc=\write3
 \openout3 = `reporte.toc'.
 
-[1]
-Underfull \hbox (badness 10000) in paragraph at lines 34--49
-\OT1/cmr/m/n/10 mundo.
+ [1]
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
+\OT1/cmr/m/n/10 tem^^Satica a ele-gir.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--49
-\OT1/cmr/m/n/10 Se con-sid-er-aron cu-a-tro grandes sec-ciones para la apli-cac
-i^^Son:
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
+\OT1/cmr/m/n/10 vi-a-jes.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--49
-\OT1/cmr/m/n/10 ativi-dad al ju-gar.
+Overfull \hbox (64.52858pt too wide) in paragraph at lines 42--45
+\OT1/cmr/m/n/10 La liga para el repos-i-to-rio de github es la sigu-iente: http
+s://github.com/Action52/PueblaViajes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--49
-\OT1/cmr/m/n/10 juego.
+Underfull \hbox (badness 10000) in paragraph at lines 42--45
+\OT1/cmr/m/n/10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--49
-\OT1/cmr/m/n/10 com-par-tan art^^S^^Pculos de in-ter^^Ses so-bre el aje-drez.
+Underfull \hbox (badness 10000) in paragraph at lines 52--64
+\OT1/cmr/m/n/10 de datos con las sigu-ientes cre-den-ciales:
  []
 
 
-Underfull \hbox (badness 6927) in paragraph at lines 34--49
-\OT1/cmr/m/n/10 la p^^Sagina so-bre las difer-entes aper-turas que ex-is-ten en
- el juego.
+Underfull \hbox (badness 10000) in paragraph at lines 52--64
+\OT1/cmr/m/n/10 Usuario: vi-a-je-sPuebla
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--56
-\OT1/cmr/m/n/10 Google: GCloud.
+Underfull \hbox (badness 10000) in paragraph at lines 52--64
+\OT1/cmr/m/n/10 Pass-word: vi-a-jes123
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--70
-\OT1/cmr/m/n/10 cual es muy ^^Sutil ya que es muy f^^Sacil de usar.
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
-\OT1/cmr/m/n/10 la creaci^^Son de sitios web re-spon-sivos.
+Underfull \hbox (badness 10000) in paragraph at lines 52--64
+\OT1/cmr/m/n/10 Puerto: 5432
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
-\OT1/cmr/m/n/10 la creaci^^Son de sitios web re-spon-sivos.
+Underfull \hbox (badness 10000) in paragraph at lines 52--64
+\OT1/cmr/m/n/10 Host: dbviajes.c72vt9uachn0.us-east-2.rds.amazonaws.com
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
-\OT1/cmr/m/n/10 la creaci^^Son de sitios web re-spon-sivos.
+Underfull \hbox (badness 10000) in paragraph at lines 67--76
+\OT1/cmr/m/n/10 de-pen-di-endo de la petici^^Son.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--91
-\OT1/cmr/m/n/10 la creaci^^Son de sitios web re-spon-sivos.
+Overfull \hbox (1.2506pt too wide) in paragraph at lines 67--76
+\OT1/cmr/m/n/10 /users/ de-spl-iega to-dos los usuar-ios o crea uno nuevo, de-p
+en-di-endo de la petici^^Son.
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
-\OT1/cmr/m/n/10 la creaci^^Son de sitios web re-spon-sivos.
- []
-
-[3] [4] (./reporte.aux) ) 
+[2] [3] (./reporte.aux) ) 
 Here is how much of TeX's memory you used:
- 3788 strings out of 494437
- 51126 string characters out of 6166645
- 114380 words of memory out of 5000000
- 7095 multiletter control sequences out of 15000+600000
- 8123 words of font info for 30 fonts, out of 8000000 for 9000
+ 3794 strings out of 494437
+ 51195 string characters out of 6166645
+ 113380 words of memory out of 5000000
+ 7096 multiletter control sequences out of 15000+600000
+ 8431 words of font info for 31 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 39i,7n,32p,445b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,7n,32p,240b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017basic/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017basic/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017basic/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on reporte.pdf (5 pages, 66531 bytes).
+ublic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017basic/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017basic/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017basic/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017basic/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on reporte.pdf (4 pages, 81365 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
