@@ -7,8 +7,6 @@ node {
         app = docker.image("leonvillapun/backendviajes")
     }
     stage('Test image') {
-       app.inside{
         sh 'echo "Tests passed"'
-       }
     }
 }
