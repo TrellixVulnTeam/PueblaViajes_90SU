@@ -41,11 +41,16 @@ def viaje_list(request, format=None):
         return JSONResponse(serializer.data)
 
     elif request.method == 'POST':
+<<<<<<< HEAD
 
         print(request.data)
         #data = JSONParser().parse(request.data)
 
         serializer = ViajeSerializer(data=request.data)
+=======
+        #data = JSONParser().parse(request)
+        serializer = ViajeSerializer(data=request)
+>>>>>>> 3c7b126eb925f87c11ca1835d392c111461436c5
         if serializer.is_valid():
             serializer.save()
             return JSONResponse(serializer.data, status=201)
