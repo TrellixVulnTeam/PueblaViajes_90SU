@@ -19,6 +19,7 @@ function UserLoginObject(myUsername, myPassword1, myEmail) {
 };
 
 function pruebaRegister(){
+
   try
   {
   	var myData = new UserObject(
@@ -56,6 +57,7 @@ function pruebaRegister(){
 }
 
 function iniciarSesion(){
+  alert("nacho");
   try
   {
     var myData = new UserLoginObject(

@@ -1,0 +1,43 @@
+<div class="container" id="viaje-form">
+    <div [hidden]="submitted">
+      <h1>Viaje Form</h1>
+      <form (ngSubmit)="onSubmit(title,description,start_date,end_date,price,contact_number)" #viajeForm="ngForm">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control"
+                    [(ngModel)]="title" name="title" placeholder="title" required>
+          </div>
+  
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" class="form-control"
+                 [(ngModel)]="description" name="description" placeholder="description" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="start_date">Start Date</label>
+          <input type="text" class="form-control" 
+                  [(ngModel)]="start_date" name="start_date" placeholder="start date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="end_date">End Date</label>
+          <input type="text" class="form-control" 
+                  [(ngModel)]="end_date" name="end_date" placeholder="end date" required>
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input  type="text" class="form-control" 
+                  [(ngModel)]="description" name="description" placeholder="price" required>
+        </div>
+        <div class="form-group">
+          <label for="contact_number">Contact Number</label>
+          <input type="text" class="form-control"
+                  [(ngModel)]="contact_number" name="contact_number" placeholder="contact number" required>
+        </div>
+        <button type="submit" class="btn btn-success" >Submit</button>
+        <button type="button" class="btn btn-default" (click)="newViaje(); viajeForm.reset()">New Viaje</button>
+      </form>
+    </div>
+  
+</div>

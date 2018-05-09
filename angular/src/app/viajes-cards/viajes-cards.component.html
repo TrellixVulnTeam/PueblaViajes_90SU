@@ -1,0 +1,20 @@
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div>
+  <ng-container *ngFor="let viaje of data">
+  <div class="card" style="width: 18rem;">
+    <hr>
+    <div class="card-body">
+        <h4 class="card-title">Titulo:</h4> <h5>{{viaje.title}}</h5>
+        <h4 class="card-title">Fecha inicio:</h4> <h5>{{viaje.start_date}}</h5>
+        <h4 class="card-title">Fecha termina:</h4> <h5>{{viaje.end_date}}</h5>
+        <h4 class="card-title">Precio:</h4> <h5>{{viaje.price}}</h5>
+        <h4 class="card-title">Numero de contacto:</h4> <h5>{{viaje.contact_number}}</h5>
+    </div>
+    <hr>
+  </div>
+  </ng-container>
+</div>
