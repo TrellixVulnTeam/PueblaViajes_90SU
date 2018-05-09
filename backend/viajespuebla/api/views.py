@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
+from rest_framework.decorators import api_view
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 from api.models import Viaje, Profile
@@ -8,6 +9,7 @@ from api.serializers import ViajeSerializer, UserSerializer, ProfileSerializer
 from django.contrib.auth.models import User
 from rest_framework import viewsets
 from django.views.decorators.csrf import csrf_exempt
+import json
 
 class JSONResponse(HttpResponse):
     """
@@ -27,18 +29,23 @@ class ProfileViewSet(viewsets.ModelViewSet):
     serializer_class = ProfileSerializer
 
 @csrf_exempt
-def viaje_list(request):
+@api_view(['GET', 'POST'])
+def viaje_list(request, format=None):
     """
     List all code serie, or create a new serie.
     """
+    print (request)
     if request.method == 'GET':
         viajes = Viaje.objects.all()
         serializer = ViajeSerializer(viajes, many=True)
         return JSONResponse(serializer.data)
 
     elif request.method == 'POST':
-        data = JSONParser().parse(request)
-        serializer = ViajeSerializer(data=data)
+
+        print(request.data)
+        #data = JSONParser().parse(request.data)
+
+        serializer = ViajeSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return JSONResponse(serializer.data, status=201)
@@ -73,7 +80,9 @@ def viaje_detail(request, pk):
 
 
 @csrf_exempt
-def profile_list(request):
+@api_view(['GET', 'POST'])
+
+def profile_list(request, format=None):
     """
     List all code serie, or create a new serie.
     """
@@ -83,9 +92,12 @@ def profile_list(request):
         return JSONResponse(serializer.data, status = 200)
 
     elif request.method == 'POST':
-        data = JSONParser().parse(request)
+
+
+
+        #data = JSONParser().parse(json_data)
         #Display parameters
-        serializer = ProfileSerializer(data=data)
+        serializer = ProfileSerializer(data=request.data)
 
         if serializer.is_valid():
             serializer.save()
